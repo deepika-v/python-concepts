@@ -41,6 +41,11 @@ python-concepts/
 11. **Exception Handling** - Try/except/finally blocks
 12. **Modules** - Import mechanisms and module organization
 13. **Advanced** - Lambda, map, filter, reduce functions
+14. **NumPy Basics** - Arrays, operations, broadcasting, statistics
+15. **Pandas Basics** - DataFrames, Series, data manipulation
+16. **Streamlit Demo** - Web app concepts and widgets
+17. **Streamlit App** - Complete data analysis dashboard
+18. **NumPy Advanced** - Fancy indexing, ufuncs, structured arrays
 
 ## How to Use
 
@@ -56,18 +61,68 @@ python-concepts/
    ```
 4. Practice with exercises in the `examples/` directory
 
+## Interactive Push Helper
+
+If you want Git to ask which remote and branch to push, use the helper script:
+
+```powershell
+cd "c:\AI Learning\python-concepts"
+.\git_push.ps1
+```
+
+- Leave the remote blank to use `origin`
+- Leave the branch blank to use `master`
+- The script uses a one-time credential helper override so Git should prompt for credentials for this push only
+- It does not clear your stored Git credentials globally
+
+## Running Streamlit Applications
+
+To run the Streamlit demos:
+
+```bash
+# Basic Streamlit concepts
+streamlit run src/16_streamlit_demo.py
+
+# Complete data analysis dashboard
+streamlit run src/17_streamlit_app.py
+```
+
+The dashboard includes:
+- Data upload and exploration
+- Interactive visualizations
+- Statistical analysis
+- Correlation analysis
+- Basic machine learning predictions
+
 ## Requirements
 
 - Python 3.7+
-- No external dependencies required for core concepts
+- NumPy (for array operations)
+- Pandas (for data manipulation)
+- Streamlit (for web applications)
+- Matplotlib & Seaborn (for plotting)
+- Plotly (for interactive visualizations)
+- Scikit-learn (for machine learning)
+
+Install all dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+No external dependencies required for core Python concepts (files 01-13).
 
 ## Learning Path
 
 Start with:
-1. Data types and operators
-2. Control flow
-3. Functions
-4. OOP basics
-5. Advanced concepts
+1. Data types and operators (01-02)
+2. Control flow (03)
+3. Functions (04)
+4. Data structures (05-06)
+5. OOP basics (08)
+6. Advanced concepts (09-11)
+7. NumPy fundamentals (14)
+8. Pandas data manipulation (15)
+9. Streamlit web apps (16-17)
+10. NumPy advanced topics (18)
 
 Then explore specialized topics based on your interests.
