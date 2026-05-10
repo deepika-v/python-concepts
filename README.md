@@ -19,7 +19,14 @@ python-concepts/
 │   ├── 10_generators.py         # Generators and iterators
 │   ├── 11_exception_handling.py # Error handling
 │   ├── 12_modules_packages.py   # Modules and imports
-│   └── 13_advanced_concepts.py  # Lambda, map, filter, reduce
+│   ├── 13_advanced_concepts.py  # Lambda, map, filter, reduce
+│   ├── 14_numpy_basics.py       # NumPy arrays and operations
+│   ├── 15_pandas_basics.py      # Pandas DataFrames and Series
+│   ├── 16_streamlit_demo.py     # Streamlit web app basics
+│   ├── 17_streamlit_app.py      # Complete Streamlit dashboard
+│   ├── 18_numpy_advanced.py     # Advanced NumPy features
+│   ├── 19_fastapi_basics.py     # FastAPI REST API framework
+│   └── 20_django_basics.py      # Django web framework basics
 ├── examples/                     # Practical examples
 │   └── practice_exercises.py    # Exercises to practice concepts
 ├── README.md                     # This file
@@ -46,6 +53,8 @@ python-concepts/
 16. **Streamlit Demo** - Web app concepts and widgets
 17. **Streamlit App** - Complete data analysis dashboard
 18. **NumPy Advanced** - Fancy indexing, ufuncs, structured arrays
+19. **FastAPI Basics** - REST API development with automatic docs
+20. **Django Basics** - Web framework with models, queries, relationships
 
 ## How to Use
 
@@ -93,6 +102,46 @@ The dashboard includes:
 - Statistical analysis
 - Correlation analysis
 - Basic machine learning predictions
+
+## Running FastAPI Applications
+
+To run the FastAPI demo:
+
+```bash
+# Install dependencies
+pip install fastapi uvicorn
+
+# Run the API server
+uvicorn src.19_fastapi_basics:app --reload
+
+# Or run directly
+python src/19_fastapi_basics.py
+```
+
+The API includes:
+- Interactive documentation at http://127.0.0.1:8000/docs
+- RESTful endpoints for CRUD operations
+- Automatic request/response validation
+- Path and query parameters
+
+## Running Django Examples
+
+To run the Django basics demo:
+
+```bash
+# Install Django
+pip install django
+
+# Run the demonstration
+python src/20_django_basics.py
+```
+
+The demo covers:
+- Model definitions with relationships
+- Database operations (CRUD)
+- QuerySets and filtering
+- Aggregation and complex queries
+- Admin interface concepts
 
 ## Requirements
 
