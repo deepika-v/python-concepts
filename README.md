@@ -26,7 +26,18 @@ python-concepts/
 │   ├── 17_streamlit_app.py      # Complete Streamlit dashboard
 │   ├── 18_numpy_advanced.py     # Advanced NumPy features
 │   ├── 19_fastapi_basics.py     # FastAPI REST API framework
-│   └── 20_django_basics.py      # Django web framework basics
+│   ├── 20_django_basics.py      # Django web framework basics
+├── python-advanced/              # Advanced Python internals and async examples
+│   ├── oop_advanced.py           # Abstract bases, multiple inheritance, composition
+│   ├── python_internals.py       # GIL, threading, multiprocessing, garbage collection
+│   ├── decorators/               # Custom decorator patterns
+│   │   └── custom_decorators.py
+│   ├── context_managers/         # Resource management examples
+│   │   └── context_manager_examples.py
+│   ├── asyncio_examples/         # Async programming and FastAPI comparison
+│   │   └── async_vs_sync_fastapi.py
+│   └── gil_threading_demo/       # GIL and concurrency demos
+│       └── gil_threading_demo.py
 ├── examples/                     # Practical examples
 │   └── practice_exercises.py    # Exercises to practice concepts
 ├── README.md                     # This file
@@ -55,6 +66,11 @@ python-concepts/
 18. **NumPy Advanced** - Fancy indexing, ufuncs, structured arrays
 19. **FastAPI Basics** - REST API development with automatic docs
 20. **Django Basics** - Web framework with models, queries, relationships
+21. **OOP Advanced** - Abstract base classes, multiple inheritance, composition
+22. **Python Internals** - GIL, threading vs multiprocessing, garbage collection
+23. **Decorators** - Custom decorators and memoization patterns
+24. **Context Managers** - __enter__/__exit__ and generator-based management
+25. **Async Programming** - asyncio, await, event loop, async FastAPI comparison
 
 ## How to Use
 
