@@ -13,6 +13,19 @@ fastapi>=0.68.0        # Modern, fast web framework for APIs
 uvicorn>=0.15.0        # ASGI server for FastAPI
 django>=4.0.0          # High-level Python web framework
 
+# Production FastAPI Dependencies
+python-jose[cryptography]>=3.3.0  # JWT token handling
+passlib[bcrypt]>=1.7.4            # Password hashing
+python-multipart>=0.0.5           # OAuth2 form data support
+sqlalchemy[asyncio]>=2.0.0        # Async SQLAlchemy ORM
+aiosqlite>=0.17.0                 # SQLite async driver
+motor>=3.1.0                      # MongoDB async driver
+prometheus-client>=0.16.0         # Prometheus metrics
+structlog>=22.1.0                 # Structured logging
+slowapi>=0.1.9                    # Rate limiting
+pytest>=7.0.0                     # Testing framework
+httpx>=0.23.0                     # Async HTTP client for tests
+
 # Machine Learning (for advanced examples)
 scikit-learn>=1.0.0    # Machine learning algorithms
 

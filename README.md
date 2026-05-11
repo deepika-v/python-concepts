@@ -38,6 +38,19 @@ python-concepts/
 │   │   └── async_vs_sync_fastapi.py
 │   └── gil_threading_demo/       # GIL and concurrency demos
 │       └── gil_threading_demo.py
+├── fastapi-production/          # Production-ready FastAPI application
+│   ├── main.py                  # Main FastAPI app with all features
+│   ├── auth/                    # Authentication and authorization
+│   │   ├── jwt.py               # JWT token handling
+│   │   └── rbac.py              # Role-based access control
+│   ├── middleware/              # Custom middleware
+│   │   ├── logging.py           # Request/response logging
+│   │   └── rate_limiting.py     # Rate limiting
+│   ├── observability/           # Monitoring and logging
+│   │   ├── metrics.py           # Prometheus metrics
+│   │   └── structured_logging.py # Structured logging setup
+│   └── tests/                   # Test suite
+│       └── test_api.py          # API tests with pytest
 ├── examples/                     # Practical examples
 │   └── practice_exercises.py    # Exercises to practice concepts
 ├── README.md                     # This file
@@ -139,6 +152,41 @@ The API includes:
 - RESTful endpoints for CRUD operations
 - Automatic request/response validation
 - Path and query parameters
+
+## Running Production FastAPI
+
+To run the production-ready FastAPI application:
+
+```bash
+# Install all dependencies
+pip install -r requirements.txt
+
+# Start MongoDB (if using MongoDB features)
+# mongod
+
+# Run the production API server
+uvicorn fastapi_production.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+The production API includes:
+- **Authentication**: OAuth2 + JWT tokens
+- **Authorization**: Role-based access control (RBAC)
+- **Middleware**: Logging, correlation IDs, rate limiting
+- **Observability**: Prometheus metrics, structured logging
+- **Databases**: Async SQLAlchemy (SQLite) + MongoDB
+- **Testing**: Comprehensive pytest suite
+- **Documentation**: Interactive API docs at http://127.0.0.1:8000/docs
+
+### Testing the Production API
+
+```bash
+# Run the test suite
+cd fastapi-production
+pytest tests/test_api.py -v
+
+# Or run all tests
+pytest
+```
 
 ## Running Django Examples
 
